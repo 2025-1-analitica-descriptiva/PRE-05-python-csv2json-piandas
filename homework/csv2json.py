@@ -9,6 +9,7 @@ def convert_csv_2_json(input_file):
     """Converts a CSV file to a JSON file"""
 
     output_file = input_file.replace(".csv", ".json")
+
     data = []
 
     with open(input_file, "r", encoding="utf-8") as f:
@@ -44,8 +45,5 @@ def app():
 
     ui.run()
 
-
-
-    
 app()
 
